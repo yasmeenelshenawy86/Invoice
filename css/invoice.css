@@ -1,0 +1,283 @@
+/* Start Global Rules */
+*{
+    --webkit-box-sizing: border-box;
+    --moz-box-sizing:border-box;
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+body{
+    font-family: 'Tajawal', sans-serif;
+    border: 3px solid var(--main-color);
+    background-color: var(--background-color);
+}
+.container{
+    padding-left: 15px;
+    padding-right: 15px;
+    margin-right:auto ;
+    margin-left: auto;
+}
+/* Small Screen */
+@media (min-width:768px){
+    .container{
+        width:750px;
+    }
+}    
+    /* Medium Screen */
+@media(min-width:992px){
+    .container{
+        width: 970px;
+    }
+} 
+    /* Larg Screen */
+@media(min-width:1200px){
+    .container{
+        width:1170px;
+    }
+} 
+/* End Global Rules*/
+/* Start Variables */
+:root{
+    --main-color:#008080;
+    --background-color:#f5f5f5;
+    --border-color:#dcdcdc;
+}
+/* End Variables */
+/* Start Header */
+    header .title{
+        position: relative;
+        background-color: var(--main-color);
+        color: white;
+        padding: 20px;
+        font-size: 30px;
+    }
+    @media(max-width:767px){
+        header .title{
+            font-size: 22px;
+        }
+    }
+    header .title i{
+        position: absolute;
+        top: 50%;
+        right: 15px;
+        transform: translateY(-50%);
+        -webkit-transform: translateY(-50%);
+        -moz-transform: translateY(-50%);
+        -ms-transform: translateY(-50%);
+        -o-transform: translateY(-50%);
+}
+    header .title p{
+        text-align: center;
+    }
+/* End Header */
+/* Start Section Info Content */
+.info-content{
+    display: flex;
+    flex-wrap: wrap;
+    padding-top: 20px;
+    gap: 10px;
+    margin-right: 10px;
+    margin-left: 10px;
+}
+@media(max-width:767px){
+    .info-content{
+        margin-left: 0;
+        margin-right: 0;
+        gap:0;
+    }
+}
+.info-content .box-one{
+    flex-basis:calc(50% - 5px);
+    padding-top: 10px;
+}
+@media(max-width:767px){
+    .info-content .box-one{
+        flex: 1;
+        padding-right:10px;
+        padding-left: 10px;
+    }
+}
+.info-content .box-one form{
+    border: 1px solid var(--border-color);
+    margin-left: auto;
+    margin-right: auto;
+    position: relative;
+    padding-top: 15px;
+}
+@media(max-width:767px){
+    .info-content .box-one form{
+        margin-bottom: 15px;
+    }
+}
+.info-content .box-one form::before{
+    content: "بيانات الفاتورة";
+    position: absolute;
+    top: -12px;
+    right: 10px;
+    transform: translateX(-12px);
+    color: var(--main-color);
+    background-color: var(--background-color);
+    font-weight: bold;
+    font-size: 18px;
+    -webkit-transform: translateX(-12px);
+    -moz-transform: translateX(-12px);
+    -ms-transform: translateX(-12px);
+    -o-transform: translateX(-12px);
+}
+.info-content form div{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 10px;
+    margin: 5px;
+}
+.info-content form div label{
+    color: var(--main-color);
+    font-weight: bold;
+}
+.info-content .box-one form div input{
+    padding: 2px;
+    width: 70%;
+    text-align: center;
+    font-size: 19px;
+    font-weight: 600;
+    outline: none;
+}
+@media(max-width:768px) and (max-width:991px){
+    .info-content .box-one form div input{
+        width: 60%;
+        font-size: 15px;
+        font-weight: 500;
+    }
+}
+.info-content .box-one form div input:focus{
+    border: 1px solid blue;
+}
+.info-content .box-two{
+    display: flex;
+    flex-direction: column;
+    justify-content:space-between;
+    align-items: stretch;
+    flex-basis:calc(50% - 5px);
+    padding-top: 10px;
+}
+@media(min-width:317px) and (max-width:767px){
+    .info-content .box-one,.box-two{
+        flex: 1;
+        padding-right:10px ;
+        padding-left: 10px;
+    }
+}
+.info-content .box-two form div input{
+    padding: 5px;
+    width: 80%;
+    text-align: center;
+    outline: none;
+}
+@media(max-width:767px){
+    .info-content .box-two form div input{
+        width: 69%;
+    }
+}
+@media(min-width:768px) and (max-width:1024px){
+    .info-content .box-two form div input{
+        width: 67%;
+    }
+}
+.info-content .box-two form div input:focus{
+    border: 1px solid blue;
+}
+@media(max-width:767px){
+    .info-content form div label{
+        font-size: 12px;
+    }
+}
+.info-content .box-two form:first-of-type {
+    border: 1px solid var(--border-color);
+    padding: 15px;
+    margin-bottom: 27px;
+    position: relative;
+}
+.info-content .box-two form:first-of-type::before{
+    content: "بيانات المورد";
+    position: absolute;
+    top: -12px;
+    right: 10px;
+    transform: translateX(-12px);
+    color: var(--main-color);
+    background-color: var(--background-color);
+    font-weight: bold;
+    font-size: 18px;
+    -webkit-transform: translateX(-12px);
+    -moz-transform: translateX(-12px);
+    -ms-transform: translateX(-12px);
+    -o-transform: translateX(-12px);
+}
+.info-content .box-two form:last-of-type{
+    border: 1px solid var(--border-color);
+    padding: 15px;
+    position: relative;
+}
+.info-content .box-two form::before{
+    content: "بيانات العميل";
+    position: absolute;
+    top: -12px;
+    right: 10px;
+    transform: translateX(-12px);
+    color: var(--main-color);
+    background-color: var(--background-color);
+    font-weight: bold;
+    font-size: 18px;
+    -webkit-transform: translateX(-12px);
+    -moz-transform: translateX(-12px);
+    -ms-transform: translateX(-12px);
+    -o-transform: translateX(-12px);
+}
+/* End Section Info Content */
+/* Start Section QR Sys */
+    .qr-sys{
+        padding-top:50px ;
+    }
+    .qr-sys .container{
+        display: flex;
+        justify-content: center;
+    }
+    .qr-sys .container > div{
+        width: 300px;
+        height: 300px;
+        border: 10px solid white;
+        background-image: url(../Image/download.png);
+        background-size: cover;
+        background-repeat:no-repeat;
+        max-width: 100%;
+    }
+    @media(max-width:767px){
+        .qr-sys .container > div{
+            width: 150px;
+            height: 150px;
+        }
+    }
+    .qr-sys .links{
+        display: flex;
+        justify-content: center;  
+        align-items: center; 
+    }
+    .qr-sys .links button{
+        margin: 15px;
+        padding: 10px 20px;
+        background-color: var(--main-color);
+        color: white;
+        border-radius: 5px;
+        -webkit-border-radius: 5px;
+        -moz-border-radius: 5px;
+        -ms-border-radius: 5px;
+        -o-border-radius: 5px;
+        font-size: 18px;
+        border: none;
+}
+@media(max-width:767px){
+    .qr-sys .links button{
+        margin:10px;
+    }
+}
+/* End Section QR Sys */

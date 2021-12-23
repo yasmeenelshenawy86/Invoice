@@ -1,0 +1,109 @@
+<!DOCTYPE html>
+<html lang="AR" dir="rtl">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>فاتورتك</title>
+    <!--Main CSS File-->
+    <link rel="stylesheet" href="css/invoice.css">
+    <!--Render all Elements Normal-->
+    <link rel="stylesheet" href="css/normalize.css">
+    <!--Font Awesome Liberary-->
+    <link rel="stylesheet" href="css/all.min.css">
+    <!--Google Fonts-->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Tajawal:wght@300;400;500;700;800;900&display=swap" rel="stylesheet">
+</head>
+<body>
+    <header>
+        <div class="title">
+            <i class="far fa-times-circle"></i>
+            <p>إضافة فاتورة جديدة</p>
+        </div>
+    </header>
+    <!--Start section Info-content-->
+    <section class="info-content">
+            <div class="box-one">
+                <form action="#" method="post">
+                    <div>
+                        <label for="bill-num">رقم الفاتورة</label>
+                        <input type="text" name="bill-num">
+                    </div>
+                    <div>
+                        <label for="bill-date">التاريخ</label>
+                        <input type="datetime-local" name="bill-date">
+                    </div>
+                    <div>
+                        <label for="items">عدد الأصناف</label>
+                        <input type="text" name="items" placeholder="0">
+                    </div>
+                    <div>
+                        <label for="total">الأجمالى</label>
+                        <input type="text" name="total" placeholder="0.00">
+                    </div>
+                    <div>
+                        <label for="discount">قيمة الخصم</label>
+                        <input type="text" name="discount" placeholder="0.00">
+                    </div>
+                    <div>
+                        <label for="before-tax">المبلغ قبل الضريبة</label>
+                        <input type="text" name="before-tax" placeholder="0.00">
+                    </div>
+                    <div>
+                        <label for="tax">الضريبة  (VAT)</label>
+                        <input type="text" name="tax" placeholder="0.00">
+                    </div>
+                    <div>
+                        <label for="after-tax">المبلغ بعد الضريبة</label>
+                        <input type="text" name="after-tax" placeholder="0.00">
+                    </div>
+                </form>
+            </div>
+            <div class="box-two">
+                <form action="#" method="post">
+                    <div>
+                        <label for="sup-name">الأسم</label>
+                        <input type="text" name="sup-name">
+                    </div>
+                    <div>
+                        <label for="vat-num">الرقم الضريبي</label>
+                        <input type="text" name="vat-num">
+                    </div>
+                    <div>
+                        <label for="sup-tel">الهاتف</label>
+                        <input type="text" name="sup-tel">
+                    </div>
+                </form>
+                <form action="#" method="post">
+                    <div>
+                        <label for="client-name">الأسم</label>
+                        <input type="text" name="client-name">
+                    </div>
+                    <div>
+                        <label for="vat-num">الرقم الضريبي</label>
+                        <input type="text" name="vat-num">
+                    </div>
+                    <div>
+                        <label for="client-tel">الهاتف</label>
+                        <input type="text" name="client-tel">
+                    </div>
+                </form>
+            </div>
+    </section>
+    <!--End Section info-content-->
+    <!--Start Section QR-->
+    <section class="qr-sys">
+        <div class="container">
+            <div></div>
+        </div>
+        <div class="links">
+            <button>QR</button>
+            <button>حفظ</button>
+            <button>جديد</button>
+        </div>
+    </section>
+    <!--End Section QR-->
+</body>
+</html>
